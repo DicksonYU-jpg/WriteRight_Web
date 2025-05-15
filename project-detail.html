@@ -17,14 +17,17 @@ https://templatemo.com/tm-538-digital-trend
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- BOOTSTRAP 5 CSS (TO BE ADDED) -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="css/aos.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!-- OWL CAROUSEL CSS (TO BE REMOVED) -->
+     <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+     <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -37,21 +40,18 @@ https://templatemo.com/tm-538-digital-trend
               Digital Trend
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a href="index.html#about" class="nav-link">Studio</a>
                     </li>
                     <li class="nav-item">
                         <a href="index.html#project" class="nav-link">Our Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="blog.html" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link contact">Contact</a>
@@ -107,9 +107,9 @@ https://templatemo.com/tm-538-digital-trend
                     </div>
                </div>
 
-              <div class="col-lg-12 col-12">
-                <div class="embed-responsive embed-responsive-16by9 my-5 py-5" data-aos="fade-up">
-                    <iframe class="embed-responsive-item" width="800" height="450" src="https://www.youtube.com/embed/myVN26Vx4MU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="col-lg-12 col-12" data-aos="fade-up">
+                <div class="ratio ratio-16x9 my-5 py-5">
+                    <iframe src="https://www.youtube.com/embed/myVN26Vx4MU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -130,71 +130,62 @@ https://templatemo.com/tm-538-digital-trend
 
     <footer class="site-footer">
       <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">We make creative <strong>brands</strong> only.</h1>
+        <!-- Top Row -->
+        <div class="row mb-4">
+          <div class="col-lg-7 col-md-7 col-12" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="text-white">We make creative <strong>brands</strong> only.</h1>
           </div>
-
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-            <h4 class="my-4">Contact Info</h4>
-
+          <div class="col-lg-5 col-md-5 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4 my-lg-0">Contact Info</h4>
             <p class="mb-1">
-              <i class="fa fa-phone mr-2 footer-icon"></i> 
-              +99 080 070 4224
+              <i class="fa fa-phone me-2 footer-icon"></i>
+              +852 0000 0000
             </p>
-
-            <p>
-              <a href="#">
-                <i class="fa fa-envelope mr-2 footer-icon"></i>
-                hello@company.com
+            <p class="mb-0">
+              <a href="mailto:info@writeright.hk">
+                <i class="fa fa-envelope me-2 footer-icon"></i>
+                info@writeright.hk
               </a>
             </p>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-            <h4 class="my-4">Our Studio</h4>
-
-            <p class="mb-1">
-              <i class="fa fa-home mr-2 footer-icon"></i> 
-              Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
-            </p>
-          </div>
-
-          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
-            <p class="copyright-text">Copyright &copy; 2020 Your Company
-            <br>
-            <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p>
-          </div>
-
-          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
-            
-            <ul class="footer-link">
-              <li><a href="#">Stories</a></li>
-              <li><a href="#">Work with us</a></li>
-              <li><a href="#">Privacy</a></li>
+        <!-- Bottom Row -->
+        <div class="row align-items-center pt-4 border-top">
+          <div class="col-lg-4 col-md-12 text-center text-lg-start mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <ul class="footer-link list-inline mb-0">
+              <li class="list-inline-item"><a href="#">Stories</a></li>
+              <li class="list-inline-item"><a href="#">Work with us</a></li>
+              <li class="list-inline-item"><a href="#">Privacy</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
-            <ul class="social-icon">
-              <li><a href="#" class="fa fa-instagram"></a></li>
-              <li><a href="#" class="fa fa-twitter"></a></li>
-              <li><a href="#" class="fa fa-dribbble"></a></li>
-              <li><a href="#" class="fa fa-behance"></a></li>
+          <div class="col-lg-4 col-md-12 text-center mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text mb-0">Copyright &copy; 2025 WriteRight</p>
+          </div>
+          <div class="col-lg-4 col-md-12 text-center text-lg-end" data-aos="fade-up" data-aos-delay="500">
+            <ul class="social-icon list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="fa fa-instagram"></a></li>
+              <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a></li>
+              <li class="list-inline-item"><a href="#" class="fa fa-linkedin"></a></li>
             </ul>
           </div>
-
         </div>
       </div>
     </footer>
 
 
      <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
+     <!-- REMOVE JQUERY -->
+     <!-- <script src="js/jquery.min.js"></script> -->
+
+     <!-- BOOTSTRAP 4 JS (TO BE REMOVED) -->
+     <!-- <script src="js/bootstrap.min.js"></script> -->
+     <!-- BOOTSTRAP 5 JS (Bundle includes Popper) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
      <script src="js/aos.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
+     <!-- REMOVE OWL CAROUSEL JS -->
+     <!-- <script src="js/owl.carousel.min.js"></script> -->
      <script src="js/custom.js"></script>
 
 </body>
