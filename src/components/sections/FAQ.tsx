@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Faq from 'react-faq-component';
+import { useThemeStore } from "../../store/ThemeStore";
 import useLangStore from "../../store/LangStore";
 
 const data_en = {
@@ -61,11 +62,11 @@ const data_cn = {
 };
 
 const styles = {
-    // bgColor: 'white',
-    // titleTextColor: "blue",
-    // rowTitleColor: "blue",
-    // rowContentColor: 'grey',
-    // arrowColor: "red",
+    bgColor: 'rgba(255, 255, 255, 0)',
+    titleTextColor: "black",
+    rowTitleColor: "black",
+    rowContentColor: 'black',
+    arrowColor: "black",
 };
 
 const config = {
@@ -76,18 +77,28 @@ const config = {
 
 export const FAQ = () => {
     const { lang } = useLangStore();
+    const { theme } = useThemeStore();
     
+    const currentStyles = {
+        bgColor: 'rgba(255, 255, 255, 0)',
+        titleTextColor: theme === "light" ? "black" : "white",
+        rowTitleColor: theme === "light" ? "black" : "white",
+        rowContentColor: theme === "light" ? "black" : "white",
+        arrowColor: theme === "light" ? "black" : "white",
+    };
     return (
         <section id="faq">
             <div className="relative rounded-2xl overflow-hidden">
                 <div className="relative z-10 mx-auto text-left lg:min-w-5xl md:max-w-2xl py-8 md:py-10 px-6 md:px-8">
                     {lang === "en" ? (
-                        <Faq
+                        <Faq 
                         data={data_en}
+                        styles={currentStyles}
                         />
                     ) : (
                         <Faq
                         data={data_cn}
+                        styles={currentStyles}
                         />
                     )}
                 </div> 
