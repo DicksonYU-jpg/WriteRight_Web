@@ -1,4 +1,5 @@
 import { services } from "../../utils/services-data";
+import { services_cn } from "../../utils/services-data";
 import { Service } from "../cards/Service";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
@@ -31,9 +32,20 @@ export const Services = () => {
             <source src="../../../public/assets/video.mp4"></source>
           </video>
         </div>
-        
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {services.map((service, key) => (
+        {lang === "en" ? (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {services.map((service, key) => (
+              <Service
+                key={key}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            ))}
+          </div>
+          ) : (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {services_cn.map((service, key) => (
             <Service
               key={key}
               title={service.title}
@@ -42,6 +54,7 @@ export const Services = () => {
             />
           ))}
         </div>
+          )}
       </Container>
     </section>
   );

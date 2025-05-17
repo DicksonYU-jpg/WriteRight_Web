@@ -51,7 +51,7 @@ export const Hero = () => {
               </Paragraph>
               ) : (
                 
-              <Paragraph className="sm:text-xl mt-15 -mb-10 md:mb-0 max-w-100 sm:mt-20 md:w-110 text-justify">
+              <Paragraph className="sm:text-xl xl:text-2xl mt-15 -mb-10 md:mb-0 max-w-100 sm:mt-20 md:w-110 xl:min-w-110 text-justify">
               我們的應用程序允許用戶掃描他們的工作或論文，以檢測錯誤寫出的單詞。我們建立了一個個性化的數據庫，
               提供每日的遊戲化學習練習，旨在幫助用戶識別、書寫和記憶傳統漢字。
               </Paragraph>
