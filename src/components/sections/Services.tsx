@@ -6,7 +6,7 @@ import { Title } from "../shared/Title";
 
 export const Services = () => {
   return (
-    <section id="services">
+    <section id="product">
       {" "}
       <Container className="space-y-10 md:space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">

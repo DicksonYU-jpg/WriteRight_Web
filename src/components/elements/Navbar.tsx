@@ -6,9 +6,9 @@ import { useThemeStore } from "../../store/ThemeStore";
 import useLangStore from "../../store/LangStore";
 
 export const navItems = [
-  { href: "#services", text: "Product" },
-  { href: "#about-us", text: "Pricing" },
-  { href: "#pricing", text: "About Us" },
+  { href: "#product", text: "Product" },
+  { href: "#pricing", text: "Pricing" },
+  { href: "#about-us", text: "About Us" },
 ];
 
 export const Navbar = () => {

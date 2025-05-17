@@ -12,8 +12,8 @@ function App() {
       <Hero />
       <Brands />
       <Services />
+      {/*<Pricing />*/}
       <AboutUs />
-      <Pricing />
       <CTA />
     </Layout>
   );
