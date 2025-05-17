@@ -23,7 +23,7 @@ export const Hero = () => {
         >
           
              {lang === "en" ? (
-              <div className="w-105 sm:w-150 lg:w-160 xl:w-170">
+              <div className="sm:w-150 lg:w-160 xl:w-170">
               <h1 className="text-heading-1 text-4xl sm:text-5xl md:text-5xl xl:text-6xl font-bold">
                 Empower Your Children with
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-[#4591ff] ml-2">
