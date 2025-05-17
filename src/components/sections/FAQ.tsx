@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Faq from 'react-faq-component';
+import Faq from 'react-faq-component'; //https://www.npmjs.com/package/react-faq-component
 import { useThemeStore } from "../../store/ThemeStore";
 import useLangStore from "../../store/LangStore";
 

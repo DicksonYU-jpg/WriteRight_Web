@@ -14,6 +14,9 @@ export const Services = () => {
           <Paragraph>
             An All-in-One AI-powered Chinese Learning Platform
           </Paragraph>
+          <video controls>
+            <source src="../../../public/assets/video.mp4"></source>
+          </video>
         </div>
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
