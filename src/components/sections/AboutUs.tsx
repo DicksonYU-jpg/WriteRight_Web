@@ -19,7 +19,7 @@ export const AboutUs = () => {
         </div>
 
         <div className="w-full md:w-7/12 lg:w-1/2 flex flex-col">
-          <Title> About Our AI Solution </Title>
+          <Title> About Us </Title>
           <Paragraph>
             We are on a mission to empower businesses with transformative AI
             technology. Our team of experts combines industry‑leading research

@@ -13,7 +13,7 @@ function App() {
       <Brands />
       <Services />
       {/*<Pricing />*/}
-      <AboutUs />
+      {/*<AboutUs />*/}
       <CTA />
     </Layout>
   );

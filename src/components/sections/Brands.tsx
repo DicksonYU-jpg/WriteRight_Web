@@ -2,7 +2,7 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 import useLangStore from "../../store/LangStore";
 
-const logos = ["hkstp", "cuhkpi"];
+const logos = ["hkstp", "cuhkpi", "kteo"];
 
 export const Brands = () => {
   const { lang } = useLangStore();
