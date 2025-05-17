@@ -76,19 +76,23 @@ const config = {
 
 export const FAQ = () => {
     const { lang } = useLangStore();
+    
     return (
-        <div className="relative rounded-2xl overflow-hidden">
-          <div className="relative z-10 mx-auto text-left lg:min-w-5xl md:max-w-2xl py-8 md:py-10 px-6 md:px-8">
-          {lang === "en" ? (
-                <Faq
-                data={data_en}
-                />
-              ) : (
-                <Faq
-                data={data_cn}
-            />
-              )}
-          </div> 
-        </div>
+        <section id="faq">
+            <div className="relative rounded-2xl overflow-hidden">
+                <div className="relative z-10 mx-auto text-left lg:min-w-5xl md:max-w-2xl py-8 md:py-10 px-6 md:px-8">
+                    {lang === "en" ? (
+                        <Faq
+                        data={data_en}
+                        />
+                    ) : (
+                        <Faq
+                        data={data_cn}
+                        />
+                    )}
+                </div> 
+            </div>
+        </section>
+        
     );
 }
