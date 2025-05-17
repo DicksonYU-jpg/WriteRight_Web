@@ -12,6 +12,15 @@ export const navItems = [
   { href: '#faq', text: "FAQs"}
 ];
 
+export const navItems_cn = [
+  { href: "#product", text: "產品介紹" },
+  // { href: "#pricing", text: "Pricing" },
+  // { href: "#about-us", text: "About Us" },
+  { href: '#faq', text: "常見問題"}
+];
+
+
+
 export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
   const { toggleLang, lang } = useLangStore();
@@ -57,7 +66,7 @@ export const Navbar = () => {
                 >
                 {/* 
                 */}
-                {navItems.map((item, key) => (
+                {navItems_cn.map((item, key) => (
                     <NavItem href={item.href} text={item.text} key={key} />
                   ))} 
                 </ul>

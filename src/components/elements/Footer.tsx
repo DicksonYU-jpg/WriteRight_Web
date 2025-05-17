@@ -1,9 +1,12 @@
 import { Container } from "../shared/Container";
 import logo from "/assets/icon.svg";
 import { navItems } from "./Navbar";
+import { navItems_cn } from "./Navbar";
 import { NavItem } from "../shared/NavItem";
+import useLangStore from "../../store/LangStore";
 
 export const Footer = () => {
+  const {lang } = useLangStore();
   return (
     <footer className="relative pt-8 rounded-t-3xl bg-box-bg">
       <Container className="pb-8">
@@ -12,12 +15,19 @@ export const Footer = () => {
             <img src={logo} className="w-7 h-7" alt="EdgeAI Logo" />
             <span className="text-lg font-semibold text-heading-1">WriteRight</span>
           </div>
-
-          <ul className="flex gap-6 text-heading-1">
-            {navItems.map((item, key) => (
+          {lang === "en" ? (
+                <ul className="flex gap-6 text-heading-1">
+                {navItems.map((item, key) => (
+                  <NavItem key={key} href={item.href} text={item.text} />
+                ))}
+              </ul>
+              ) : (
+                <ul className="flex gap-6 text-heading-1">
+            {navItems_cn.map((item, key) => (
               <NavItem key={key} href={item.href} text={item.text} />
             ))}
           </ul>
+            )}
         </div>
       </Container>
     </footer>
