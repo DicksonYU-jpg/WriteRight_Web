@@ -23,12 +23,15 @@ export const Hero = () => {
         >
           
              {lang === "en" ? (
-              <h1 className="text-heading-1 text-4xl sm:text-5xl md:text-6xl xl:text-6xl font-bold">
+              <div className="w-105 sm:w-150 lg:w-160 xl:w-170">
+              <h1 className="text-heading-1 text-4xl sm:text-5xl md:text-5xl xl:text-6xl font-bold">
                 Empower Your Children with
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-[#4591ff] ml-2">
                 AI Teacher{" "}
                 </span>
               </h1>
+              </div>
+              
               ) : (
                 <div className="lg:w-110">
                   <h1 className="text-heading-1 text-5xl sm:text-5xl md:text-6xl xl:text-7xl font-bold">
@@ -42,7 +45,7 @@ export const Hero = () => {
               )}
 
             {lang === "en" ? (
-              <Paragraph className="mt-15 md:w-110 text-justify">
+              <Paragraph className="mt-15 md:w-110 xl:w-135 xl:mt-15 xl:mb-20 text-justify">
               Our application allows users scanning their work or essays to detect incorrectly written words. 
               We built a personalised database powering daily gamified learning exercises designed to help users recognize, write, and memorise traditional Chinese characters.
               </Paragraph>
