@@ -15,7 +15,7 @@ export const Services = () => {
             An All-in-One AI-powered Chinese Learning Platform
           </Paragraph>
         </div>
-
+        
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, key) => (
             <Service
