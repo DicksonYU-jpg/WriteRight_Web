@@ -14,6 +14,7 @@ export const Footer = () => {
           <div className="flex items-center gap-3 mb-4 md:mb-0">
             <img src={logo} className="w-7 h-7" alt="EdgeAI Logo" />
             <span className="text-lg font-semibold text-heading-1">WriteRight</span>
+            <p>© 2025. All rights reserved.</p>
           </div>
           {lang === "en" ? (
                 <ul className="flex gap-6 text-heading-1">

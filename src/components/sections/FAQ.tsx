@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Faq from 'react-faq-component'; //https://www.npmjs.com/package/react-faq-component
 import { useThemeStore } from "../../store/ThemeStore";
 import useLangStore from "../../store/LangStore";
@@ -59,20 +58,6 @@ const data_cn = {
             content: <p>current version is 1.2.1</p>,
         },
     ],
-};
-
-const styles = {
-    bgColor: 'rgba(255, 255, 255, 0)',
-    titleTextColor: "black",
-    rowTitleColor: "black",
-    rowContentColor: 'black',
-    arrowColor: "black",
-};
-
-const config = {
-    // animate: true,
-    // arrowIcon: "V",
-    // tabFocus: true
 };
 
 export const FAQ = () => {
